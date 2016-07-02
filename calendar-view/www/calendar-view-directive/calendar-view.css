@@ -1,0 +1,99 @@
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+.all{font-family: Verdana,sans-serif;
+}
+
+.month {
+  padding-top: 7vh;
+  padding-right: 3vw;
+  background: #1abc9c;
+  height: 20vh;
+}
+
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-left: 5vw;
+
+}
+
+.month .next {
+  float: right;
+  padding-right: 5vw;
+
+}
+
+.weekdays {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: #ddd;
+  text-align: center;
+  vertical-align: middle;
+  height: 8vh;
+
+}
+
+.weekdays > li {
+  display: inline-block;
+  color: #666;
+  text-align: center;
+  width:12vw;
+}
+.center-day
+{
+  height: 49vh;
+}
+.days {
+  background: #eee;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  text-align: center;
+  height: 49vh;
+
+}
+
+
+.days li {
+
+  list-style-type: none;
+  display: inline-block;
+
+  text-align: center;
+  font-size:22px;
+
+  color: #777;
+  border: solid 1px lightgrey;
+
+  width:13vw;
+  height: 7.5vh;
+}
+
+.days li .active
+{
+  color: white !important;
+  font-weight: bold;
+
+  background-color: red;
+  line-height: 7.5vh;
+
+  vertical-align: middle;
+}
+
+
+.days li .notactive
+{
+
+  line-height: 7.5vh;
+  vertical-align: middle;
+
+  color: gray !important;
+  font-weight: bold;
+}

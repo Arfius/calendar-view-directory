@@ -1,0 +1,30 @@
+<div class="all">
+<div class="month" id="monthtable">
+    <ul>
+        <li class="prev" ng-click="managemonth(-1)">❮</li>
+        <li class="next" ng-click="managemonth(1)">❯</li>
+        <li style="text-align:center">
+            {{month}}<br>
+            <span style="font-size:18px">{{year}}</span>
+        </li>
+    </ul>
+</div>
+  <ul class="weekdays" id="weektable">
+    <li class="weekbox" >{{weekday[0]}}</li>
+    <li class="weekbox" >{{weekday[1]}}</li>
+    <li class="weekbox" >{{weekday[2]}}</li>
+    <li class="weekbox" >{{weekday[3]}}</li>
+    <li class="weekbox" >{{weekday[4]}}</li>
+    <li class="weekbox" >{{weekday[5]}}</li>
+    <li class="weekbox" >{{weekday[6]}}</li>
+  </ul>
+
+  <div class="center-day" id="daystable">
+    <ul class="days">
+      <li class="daybox" ng-repeat="d in days" ng-click="selectday(d.value);" > <div ng-show='d.value!=day' class="notactive">{{d.value}}</div>   <div ng-show='d.value==day' class="active"> {{d.value}} </div> </li>
+  </ul>
+  </div>
+</div>
+
+
+
